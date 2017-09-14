@@ -24,7 +24,7 @@
     "test": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "test:ci": "CI=true react-scripts test --env=jsdom --testResultsProcessor `pwd`/node_modules/jest-junit-reporter",
-    "lint:check": "eslint src/*.js -f checkstyle > eslint.xml",
+    "lint:check": "eslint src/*.js -f checkstyle > findbugs/eslint.xml",
     "lint": "eslint src/*.js"
   }
 }
