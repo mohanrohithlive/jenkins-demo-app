@@ -5,8 +5,7 @@
 
 # testing
 /coverage
-/output
-/findbugs
+/findbugs/*.xml
 
 # production
 /build
