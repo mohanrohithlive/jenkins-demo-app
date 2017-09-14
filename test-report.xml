@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/rohith.mohan/projects/Jenkins/jenkins-demo-app/src/App.test.js" errors="0" package="/Users/rohith.mohan/projects/Jenkins/jenkins-demo-app/src/App.test.js" hostname="localhost" tests="1" failures="0" time="0.375" timestamp="2017-09-13T09:34:47">
+  <testsuite id="0" name="/Users/rohith.mohan/projects/Jenkins/jenkins-demo-app/src/App.test.js" errors="0" package="/Users/rohith.mohan/projects/Jenkins/jenkins-demo-app/src/App.test.js" hostname="localhost" tests="1" failures="0" time="0.309" timestamp="2017-09-14T05:14:40">
     <properties>
     </properties>
     <testcase classname="renders without crashing" name="renders without crashing" time="0">
