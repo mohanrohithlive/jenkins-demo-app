@@ -1,18 +1,30 @@
 {
   "name": "jenkins-demo-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.6.1",
+    "eslint-config-react-app": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.3.0",
+    "jest-junit": "^1.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "0.9.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test:watch": "react-scripts test --env=jsdom",
     "test": "CI=true react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:ci": "CI=true react-scripts test --env=jsdom --testResultsProcessor `pwd`/node_modules/jest-junit > output/ci.txt",
+    "lint:check": "eslint --debug src/*.js -f checkstyle -o findbugs/eslint.xml",
+    "lint": "eslint src/*.js"
   }
 }
