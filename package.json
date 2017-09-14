@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.6.1",
+    "eslint-config-react-app": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.3.0",
     "jest-junit-reporter": "^1.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "0.9.5"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.6.1",
-    "eslint-config-react-app": "^2.0.0",
-    "eslint-plugin-flowtype": "^2.35.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,6 +24,7 @@
     "test": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "test:ci": "CI=true react-scripts test --env=jsdom --testResultsProcessor `pwd`/node_modules/jest-junit-reporter",
-    "lint": "eslint src/*.js --debug"
+    "lint:check": "eslint src/*.js -f checkstyle > eslint.xml",
+    "lint": "eslint src/*.js"
   }
 }
